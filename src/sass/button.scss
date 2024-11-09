@@ -1,6 +1,7 @@
 .btn {
     @include gradientRose;
     @include center;
+    cursor: pointer;
     position: absolute;
     right: -0px;
     width: 70px;
