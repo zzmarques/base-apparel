@@ -1,0 +1,202 @@
+.btn {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  width: 70px;
+  height: 50px;
+  border-radius: 35px;
+  border: 0;
+  box-shadow: hsl(0, 36%, 70%) 0px 5px 15px;
+}
+@media (min-width: 1024px) {
+  .btn {
+    width: 100px;
+  }
+}
+.btn::before {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.267);
+  transition: 0.4s all ease;
+}
+.btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+header .container-img {
+  width: 125px;
+  margin-left: 30px;
+}
+@media (min-width: 1024px) {
+  header .container-img {
+    margin-left: 130px;
+  }
+}
+header .container-img img {
+  height: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  main .main-img {
+    height: 655px;
+  }
+}
+main .main-img img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  main .main-img img {
+    height: 100%;
+  }
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 325px;
+}
+@media (min-width: 1024px) {
+  main .container {
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 649px;
+  }
+}
+main .container .container-text {
+  width: 88%;
+  text-align: center;
+  margin-top: 15px;
+}
+@media (min-width: 1024px) {
+  main .container .container-text {
+    text-align: left;
+    width: 65%;
+    margin-left: 130px;
+  }
+}
+main .container .container-text h1 {
+  color: hsl(0, 6%, 24%);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+@media (min-width: 1024px) {
+  main .container .container-text h1 {
+    font-size: 2.8rem;
+  }
+}
+main .container .container-text h1 span {
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+@media (min-width: 1024px) {
+  main .container .container-text h1 span {
+    font-size: 2.8rem;
+  }
+}
+main .container .container-text p {
+  color: hsl(0, 36%, 70%);
+  line-height: 22px;
+  margin: 15px 0px;
+}
+main .container .container-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70px;
+}
+@media (min-width: 1024px) {
+  main .container .container-form {
+    text-align: left;
+    width: 70%;
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+}
+main .container .container-form .erro {
+  border: 1px solid hsl(0, 93%, 68%) !important;
+}
+main .container .container-form input[type=email] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 35px;
+  padding-left: 25px;
+}
+main .container .container-form input[type=email]::placeholder {
+  color: rgba(0, 0, 0, 0.274);
+  font-weight: 600;
+}
+main .container .container-form input[type=email]:focus {
+  outline: none;
+}
+main .container .container-form .img-erro {
+  position: absolute;
+  top: 14px;
+  right: 90px;
+}
+@media (min-width: 1024px) {
+  main .container .container-form .img-erro {
+    right: 130px;
+  }
+}
+main .container .container-form span {
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  color: hsl(0, 93%, 68%);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff, #fff5f5);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

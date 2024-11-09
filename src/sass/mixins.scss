@@ -1,0 +1,20 @@
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin gradientWhite {
+    background: linear-gradient(135deg,  #ffffff, #fff5f5);
+}
+
+@mixin gradientRose{
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

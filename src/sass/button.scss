@@ -1,0 +1,31 @@
+.btn {
+    @include gradientRose;
+    @include center;
+    position: absolute;
+    right: -0px;
+    width: 70px;
+    height: 50px;
+    border-radius: 35px;
+    border: 0;
+    box-shadow: $desaturated-red 0px 5px 15px;
+
+    @include desktop {
+        width: 100px;
+    }
+    
+    &::before {
+        content: '';
+        width: 0%;
+        height: 0%;
+        position: absolute;
+        border-radius: 35px;
+        background: rgba(255, 255, 255, 0.267);
+        transition: .4s all ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+        height: 100%;
+    }
+
+}
