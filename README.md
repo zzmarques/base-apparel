@@ -18,7 +18,7 @@
 - **HTML5** para a estrutura do conteúdo.
 - **CSS3** para estilização e design responsivo.
 - **JavaScript** para funcionalidades dinâmicas.
-- Sass (Syntactically Awesome Stylesheets) para pré-processamento de CSS.
+- **Sass** (Syntactically Awesome Stylesheets) para pré-processamento de CSS.
 
 ## 🚀 **Recursos Principais**
 - **Conceito Mobile First:** O design foi criado priorizando dispositivos móveis, garantindo uma experiência fluida e intuitiva, com adaptação perfeita para telas maiores.
